@@ -137,7 +137,22 @@
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
-	"reports": [],
+	"reports": [
+		{
+			"id": "45862296-5689-49cb-b346-5eb237fb0e4c",
+			"name": "EditProcess",
+			"description": "",
+			"ver": "21.10.14.920",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "949dfdb3-fe82-4db0-a806-8a144dfb9ad5",
+			"name": "ManageProcesses",
+			"description": "",
+			"ver": "21.10.14.921",
+			"application": "planet9_adaptive_list"
+		}
+	],
 	"api_authentication": [],
 	"api_group": [],
 	"tile": [
@@ -145,6 +160,11 @@
 			"id": "7a13dd2e-0c8d-45bf-80fb-af5b3d82603d",
 			"description": null,
 			"name": "swpm"
+		},
+		{
+			"id": "c631fbc2-921e-4c44-87ae-71742e14ad8f",
+			"description": "sadf",
+			"name": "ManageProcesses"
 		}
 	],
 	"category": [

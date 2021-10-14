@@ -1,0 +1,113 @@
+{
+	"id": "45862296-5689-49cb-b346-5eb237fb0e4c",
+	"createdAt": "2021-10-14T09:20:25.391Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
+				"textToastSave": "Saved",
+				"typeButtonSave": "Emphasized",
+				"tab0Text": "General",
+				"tab1Text": "Tab 1",
+				"tab2Text": "Tab 2",
+				"tab3Text": "Tab 3",
+				"tab4Text": "Tab 4",
+				"tab5Text": "Tab 5",
+				"enableClose": true,
+				"enableTab1": false,
+				"enableTab2": false,
+				"enableTab3": false,
+				"enableTab4": false,
+				"enableTab5": false,
+				"title": "Edit Process"
+			},
+			"form": {
+				"enableCompact": false,
+				"enableCentered": true
+			},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "name",
+				"label": "Project Name",
+				"type": "text"
+			},
+			{
+				"name": "description",
+				"label": "Project Description",
+				"type": "text"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text"
+			}
+		],
+		"fieldsSel": [
+			{
+				"editable": true,
+				"visible": true,
+				"name": "name",
+				"text": "Project Name",
+				"fieldPos": 1
+			},
+			{
+				"editable": true,
+				"visible": true,
+				"name": "description",
+				"text": "Project Description",
+				"fieldPos": 2
+			}
+		],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "4c7df33b-407e-4fbf-dc2a-cf898f508bb2",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "EditProcess",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "7c975154-41d9-4a98-a373-d755605f3fe0",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "21.10.14.920",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_edit",
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}
