@@ -6,11 +6,12 @@
 		"targetServers": [],
 		"path": "http://localhost:3010/mindeo/hellogit",
 		"remote": "https://github.com/mindeo/oe-project-management.git",
-		"testServers": []
+		"testServers": [],
+		"readme": "This is a test project for project management."
 	},
 	"name": "jug-project-management",
 	"description": "SW Project Artifacts Management",
-	"ver": "21.10.14.842",
+	"ver": "21.10.14.849",
 	"enableCICD": true,
 	"apps": [
 		{
