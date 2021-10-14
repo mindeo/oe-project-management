@@ -1,0 +1,53 @@
+{
+	"id": "d5ce8b39-b842-45a5-bdf7-1cd813576e9a",
+	"createdAt": "2021-08-03T08:01:50.114Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "use_case",
+			"fieldType": "uuid",
+			"description": "Use Case"
+		},
+		{
+			"fieldName": "process_step",
+			"fieldType": "uuid",
+			"description": "Process Step"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "use_case",
+			"referencedTable": "swpm_use_cases",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "use_case",
+					"fieldType": "uuid",
+					"description": "Use Case",
+					"referencedColumnName": "id"
+				}
+			]
+		},
+		{
+			"name": "process_step",
+			"referencedTable": "swpm_process_steps",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "process_step",
+					"fieldType": "uuid",
+					"description": "Process Step",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_process_steps_use_cases",
+	"description": "Process Step - Use Cases",
+	"ver": "21.8.3.101",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

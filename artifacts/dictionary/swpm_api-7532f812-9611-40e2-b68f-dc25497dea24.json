@@ -1,0 +1,46 @@
+{
+	"id": "7532f812-9611-40e2-b68f-dc25497dea24",
+	"createdAt": "2021-08-02T17:36:23.655Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "API Name"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "API Description",
+			"isNullable": true
+		},
+		{
+			"fieldName": "project",
+			"fieldType": "uuid",
+			"description": "Project"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "api_project",
+			"referencedTable": "swpm_projects",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "project",
+					"fieldType": "uuid",
+					"description": "Project",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_api",
+	"description": "API",
+	"ver": "21.8.2.1936",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

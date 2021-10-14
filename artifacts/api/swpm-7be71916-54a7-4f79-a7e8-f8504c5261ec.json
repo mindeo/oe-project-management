@@ -1,0 +1,1172 @@
+{
+	"id": "7be71916-54a7-4f79-a7e8-f8504c5261ec",
+	"createdAt": "2021-07-27T11:42:31.764Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "120db955-1fbb-48b1-e269-035499f3019f",
+			"method": "GET",
+			"path": "/listroles",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "7dcbb549-d14a-4fc0-a964-2e10c1e6d2f4",
+							"name": "rolesResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"serverScript": "82c8c02d-45e0-43b2-8704-43178275ade8",
+			"tags": "Role"
+		},
+		{
+			"id": "31d4cfcf-5f0f-4b01-9c30-8d420f22b933",
+			"method": "GET",
+			"path": "/listprojects",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "1b12cad8-1d83-4112-b945-2b91d8dfe306",
+							"name": "projectsResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"serverScript": "14f384db-1609-4437-bd89-3653afac1ab4",
+			"tags": "Project"
+		},
+		{
+			"id": "aa5eea40-0153-4212-dc0c-700a99146b51",
+			"method": "POST",
+			"path": "/saveproject",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				}
+			],
+			"serverScript": "308091a8-21f8-4aad-88c0-877c7d2c248a",
+			"tags": "Project"
+		},
+		{
+			"id": "a211a2db-9331-4409-9dd8-f05305999b4d",
+			"method": "GET",
+			"path": "/readproject",
+			"description": "",
+			"parameters": [
+				{
+					"name": "id",
+					"description": "",
+					"required": true,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "bd6c9c0b-bf4c-43b1-dbc3-651caf5be4e9",
+							"name": "projectResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"serverScript": "d248854b-6efd-44d0-8912-e4cdeec33d3d",
+			"tags": "Project"
+		}
+	],
+	"definitions": [
+		{
+			"id": "3f971c16-5904-4fdb-ffe5-91e9160fd380",
+			"name": "rolesResponse",
+			"description": "Roles",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "8dab2484-c11c-4a5b-e37b-d1de132a8a69",
+					"name": "roles",
+					"objectType": "array",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "4c0192b7-4702-4b32-c8b5-3c6887f98fca",
+			"name": "projectsResponse",
+			"description": "Projects",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "5219fed8-6b03-4188-e2e5-82c82c7e5709",
+					"name": "projects",
+					"objectType": "array",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "4c101c8f-70fc-440b-b9f4-cd13d8405296",
+			"name": "projectResponse",
+			"description": "Data of one projectt",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c37d4fd0-e846-494a-ac22-cc30321ecada",
+					"name": "id",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"children": []
+				},
+				{
+					"id": "e543746f-ef89-43ba-d087-602a0a02ff29",
+					"name": "name",
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "6a665a3f-168e-4cce-c7ad-8958e05de88b",
+					"name": "description",
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c78b9b74-f4d7-47b4-edbe-ad19963ca776",
+					"name": "createdAt",
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "8013e337-199a-42eb-c6e1-87870db81b11",
+					"name": "createdBy",
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "12feb3b3-38c0-41ff-99cf-d30df732b588",
+					"name": "updatedAt",
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a74a1905-f781-4b06-a39d-f3aeedf432f1",
+					"name": "updatedBy",
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "288cd7e8-1a6d-4c23-d71a-cbea98fb02ab",
+					"name": "id",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "4b73bded-da35-423e-8be2-ef5e962aea73",
+					"name": "createdAt",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "3719cece-24a3-4b32-f495-e42be8bf8f7b",
+					"name": "updatedAt",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "051e588d-27c7-4529-b732-12e95c5c6e8c",
+					"name": "createdBy",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "701c289f-4786-44d9-91f8-c296823b8129",
+					"name": "updatedBy",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "290c8f56-a2f8-4df9-c225-05808675ac1f",
+					"name": "name",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "ac69c3ad-c0e3-458d-8e47-e3ae7b7b4e57",
+					"name": "description",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "9bc91405-9d6e-4108-bcf7-9ce324296d60",
+					"name": "project",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "4d0c9a61-ae19-4513-83f5-4d66bccabbd8",
+					"name": "id",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "0a1cb40c-25fa-4d65-9627-4a06103fcba2",
+					"name": "createdAt",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "8eac1134-079e-43ec-ca4f-21c1cc523c43",
+					"name": "updatedAt",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "d28dbfcb-cad8-40b3-8686-ec6ede7adc04",
+					"name": "createdBy",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "2a0f357c-9590-4175-963b-07367588f066",
+					"name": "updatedBy",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "5a8b0adf-e262-4008-8afb-7ca5572d6caf",
+					"name": "name",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "28a50a14-1305-49f1-87ee-008969af37c3",
+					"name": "description",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "f98f014f-8750-47de-9da8-59696b337e59",
+					"name": "position",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "44b6403e-6f1b-42fa-9329-552b87751208",
+					"name": "process",
+					"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+					"name": "steps",
+					"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"description": "",
+					"objectType": "array",
+					"objectName": "steps",
+					"isParent": true,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": [
+						{
+							"id": "4d0c9a61-ae19-4513-83f5-4d66bccabbd8",
+							"name": "id",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "0a1cb40c-25fa-4d65-9627-4a06103fcba2",
+							"name": "createdAt",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "8eac1134-079e-43ec-ca4f-21c1cc523c43",
+							"name": "updatedAt",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "d28dbfcb-cad8-40b3-8686-ec6ede7adc04",
+							"name": "createdBy",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "2a0f357c-9590-4175-963b-07367588f066",
+							"name": "updatedBy",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "5a8b0adf-e262-4008-8afb-7ca5572d6caf",
+							"name": "name",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "28a50a14-1305-49f1-87ee-008969af37c3",
+							"name": "description",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "f98f014f-8750-47de-9da8-59696b337e59",
+							"name": "position",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "44b6403e-6f1b-42fa-9329-552b87751208",
+							"name": "process",
+							"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+					"name": "processes",
+					"description": "",
+					"objectType": "array",
+					"objectName": "processes",
+					"isParent": true,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"children": [
+						{
+							"id": "288cd7e8-1a6d-4c23-d71a-cbea98fb02ab",
+							"name": "id",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "4b73bded-da35-423e-8be2-ef5e962aea73",
+							"name": "createdAt",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "3719cece-24a3-4b32-f495-e42be8bf8f7b",
+							"name": "updatedAt",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "051e588d-27c7-4529-b732-12e95c5c6e8c",
+							"name": "createdBy",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "701c289f-4786-44d9-91f8-c296823b8129",
+							"name": "updatedBy",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "290c8f56-a2f8-4df9-c225-05808675ac1f",
+							"name": "name",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "ac69c3ad-c0e3-458d-8e47-e3ae7b7b4e57",
+							"name": "description",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "9bc91405-9d6e-4108-bcf7-9ce324296d60",
+							"name": "project",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+							"name": "steps",
+							"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"description": "",
+							"objectType": "array",
+							"objectName": "steps",
+							"isParent": true,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": [
+								{
+									"id": "4d0c9a61-ae19-4513-83f5-4d66bccabbd8",
+									"name": "id",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "0a1cb40c-25fa-4d65-9627-4a06103fcba2",
+									"name": "createdAt",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "8eac1134-079e-43ec-ca4f-21c1cc523c43",
+									"name": "updatedAt",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "d28dbfcb-cad8-40b3-8686-ec6ede7adc04",
+									"name": "createdBy",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "2a0f357c-9590-4175-963b-07367588f066",
+									"name": "updatedBy",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "5a8b0adf-e262-4008-8afb-7ca5572d6caf",
+									"name": "name",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "28a50a14-1305-49f1-87ee-008969af37c3",
+									"name": "description",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "f98f014f-8750-47de-9da8-59696b337e59",
+									"name": "position",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "44b6403e-6f1b-42fa-9329-552b87751208",
+									"name": "process",
+									"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+					"name": "project",
+					"objectType": "object",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": [
+						{
+							"id": "c37d4fd0-e846-494a-ac22-cc30321ecada",
+							"name": "id",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"children": []
+						},
+						{
+							"id": "e543746f-ef89-43ba-d087-602a0a02ff29",
+							"name": "name",
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "6a665a3f-168e-4cce-c7ad-8958e05de88b",
+							"name": "description",
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "c78b9b74-f4d7-47b4-edbe-ad19963ca776",
+							"name": "createdAt",
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "8013e337-199a-42eb-c6e1-87870db81b11",
+							"name": "createdBy",
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "12feb3b3-38c0-41ff-99cf-d30df732b588",
+							"name": "updatedAt",
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "a74a1905-f781-4b06-a39d-f3aeedf432f1",
+							"name": "updatedBy",
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+							"name": "processes",
+							"description": "",
+							"objectType": "array",
+							"objectName": "processes",
+							"isParent": true,
+							"enableValueHelp": false,
+							"enabled": true,
+							"showNameField": true,
+							"parent": "25cbc0c1-6efb-4bb1-d399-5dc9cff44b9b",
+							"children": [
+								{
+									"id": "288cd7e8-1a6d-4c23-d71a-cbea98fb02ab",
+									"name": "id",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "4b73bded-da35-423e-8be2-ef5e962aea73",
+									"name": "createdAt",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "3719cece-24a3-4b32-f495-e42be8bf8f7b",
+									"name": "updatedAt",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "051e588d-27c7-4529-b732-12e95c5c6e8c",
+									"name": "createdBy",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "701c289f-4786-44d9-91f8-c296823b8129",
+									"name": "updatedBy",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "290c8f56-a2f8-4df9-c225-05808675ac1f",
+									"name": "name",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "ac69c3ad-c0e3-458d-8e47-e3ae7b7b4e57",
+									"name": "description",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "9bc91405-9d6e-4108-bcf7-9ce324296d60",
+									"name": "project",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": []
+								},
+								{
+									"id": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+									"name": "steps",
+									"parent": "b54b3964-915c-4d06-dc0e-4b0ab117be3e",
+									"description": "",
+									"objectType": "array",
+									"objectName": "steps",
+									"isParent": true,
+									"enableValueHelp": false,
+									"enabled": true,
+									"showNameField": true,
+									"children": [
+										{
+											"id": "4d0c9a61-ae19-4513-83f5-4d66bccabbd8",
+											"name": "id",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "0a1cb40c-25fa-4d65-9627-4a06103fcba2",
+											"name": "createdAt",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "8eac1134-079e-43ec-ca4f-21c1cc523c43",
+											"name": "updatedAt",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "d28dbfcb-cad8-40b3-8686-ec6ede7adc04",
+											"name": "createdBy",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "2a0f357c-9590-4175-963b-07367588f066",
+											"name": "updatedBy",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "5a8b0adf-e262-4008-8afb-7ca5572d6caf",
+											"name": "name",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "28a50a14-1305-49f1-87ee-008969af37c3",
+											"name": "description",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "f98f014f-8750-47de-9da8-59696b337e59",
+											"name": "position",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										},
+										{
+											"id": "44b6403e-6f1b-42fa-9329-552b87751208",
+											"name": "process",
+											"parent": "d9b3f9ee-43f4-4d2c-930e-4b89ac329400",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"enableValueHelp": false,
+											"enabled": true,
+											"showNameField": true,
+											"children": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "swpm",
+	"endpoint": "/api/serverscript/swpm",
+	"ver": "21.8.9.1459",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"apiGroup": "ddebf07f-7ddb-4070-bc51-b65b89266e5b",
+	"apiFormat": 0,
+	"roles": []
+}

@@ -1,0 +1,53 @@
+{
+	"id": "82761f47-f795-4263-92db-45dcc8049e57",
+	"createdAt": "2021-08-02T17:39:09.298Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "use_case",
+			"fieldType": "uuid",
+			"description": "Use Case"
+		},
+		{
+			"fieldName": "ui",
+			"fieldType": "uuid",
+			"description": "UI"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "use_case",
+			"referencedTable": "swpm_use_cases",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "use_case",
+					"fieldType": "uuid",
+					"description": "Use Case",
+					"referencedColumnName": "id"
+				}
+			]
+		},
+		{
+			"name": "ui",
+			"referencedTable": "swpm_ui",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "ui",
+					"fieldType": "uuid",
+					"description": "UI",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_use_cases_ui",
+	"description": "Use Cases - UI",
+	"ver": "21.8.2.1939",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

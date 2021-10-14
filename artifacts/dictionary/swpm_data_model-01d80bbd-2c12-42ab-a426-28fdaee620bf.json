@@ -1,0 +1,46 @@
+{
+	"id": "01d80bbd-2c12-42ab-a426-28fdaee620bf",
+	"createdAt": "2021-08-02T17:36:39.161Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Data Model Name"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Data Model Description",
+			"isNullable": true
+		},
+		{
+			"fieldName": "project",
+			"fieldType": "uuid",
+			"description": "Project"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "data_model_project",
+			"referencedTable": "swpm_projects",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "project",
+					"fieldType": "uuid",
+					"description": "Project",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_data_model",
+	"description": "Data Model",
+	"ver": "21.8.2.1936",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

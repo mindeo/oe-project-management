@@ -1,0 +1,46 @@
+{
+	"id": "4584c529-201a-4507-8318-207530363297",
+	"createdAt": "2021-08-02T17:37:37.899Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Use Case Name"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Use Case Description",
+			"isNullable": true
+		},
+		{
+			"fieldName": "project",
+			"fieldType": "uuid",
+			"description": "Project"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "ui_project",
+			"referencedTable": "swpm_projects",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "project",
+					"fieldType": "uuid",
+					"description": "Project",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_ui",
+	"description": "UI",
+	"ver": "21.8.2.1937",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

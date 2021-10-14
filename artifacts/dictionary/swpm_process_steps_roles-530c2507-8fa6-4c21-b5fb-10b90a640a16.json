@@ -1,0 +1,53 @@
+{
+	"id": "530c2507-8fa6-4c21-b5fb-10b90a640a16",
+	"createdAt": "2021-08-03T08:01:30.683Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "process_step",
+			"fieldType": "uuid",
+			"description": "Process Step"
+		},
+		{
+			"fieldName": "role",
+			"fieldType": "uuid",
+			"description": "Role"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "process_step",
+			"referencedTable": "swpm_process_steps",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "process_step",
+					"fieldType": "uuid",
+					"description": "Process Step",
+					"referencedColumnName": "id"
+				}
+			]
+		},
+		{
+			"name": "role",
+			"referencedTable": "swpm_roles",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "role",
+					"fieldType": "uuid",
+					"description": "Role",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_process_steps_roles",
+	"description": "Process Step - Roles",
+	"ver": "21.8.3.101",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,53 @@
+{
+	"id": "59a1089e-cb17-4fd4-bf58-7f22cf38cc03",
+	"createdAt": "2021-08-02T17:38:40.811Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "ui",
+			"fieldType": "uuid",
+			"description": "UI"
+		},
+		{
+			"fieldName": "api",
+			"fieldType": "uuid",
+			"description": "API"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "ui",
+			"referencedTable": "swpm_ui",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "ui",
+					"fieldType": "uuid",
+					"description": "UI",
+					"referencedColumnName": "id"
+				}
+			]
+		},
+		{
+			"name": "api",
+			"referencedTable": "swpm_api",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "api",
+					"fieldType": "uuid",
+					"description": "API",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_ui_api",
+	"description": "UI - API",
+	"ver": "21.8.2.1938",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

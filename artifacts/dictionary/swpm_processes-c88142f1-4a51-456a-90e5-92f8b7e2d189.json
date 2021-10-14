@@ -1,0 +1,46 @@
+{
+	"id": "c88142f1-4a51-456a-90e5-92f8b7e2d189",
+	"createdAt": "2021-08-02T15:35:08.854Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Process Name"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Process Description",
+			"isNullable": true
+		},
+		{
+			"fieldName": "project",
+			"fieldType": "uuid",
+			"description": "Project"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "process_project",
+			"referencedTable": "swpm_projects",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "project",
+					"fieldType": "uuid",
+					"description": "Project",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_processes",
+	"description": "Processes",
+	"ver": "21.8.2.1735",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

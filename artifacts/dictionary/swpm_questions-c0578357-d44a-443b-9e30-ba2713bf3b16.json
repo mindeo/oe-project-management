@@ -1,0 +1,56 @@
+{
+	"id": "c0578357-d44a-443b-9e30-ba2713bf3b16",
+	"createdAt": "2021-08-02T17:37:16.432Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "question",
+			"fieldType": "text",
+			"description": "Question (Oneliner)"
+		},
+		{
+			"fieldName": "explanation",
+			"fieldType": "text",
+			"description": "Explanation",
+			"isNullable": true
+		},
+		{
+			"fieldName": "project",
+			"fieldType": "uuid",
+			"description": "Project"
+		},
+		{
+			"fieldName": "entity_ref_type",
+			"fieldType": "text",
+			"description": "to which type of artefact does the question belong"
+		},
+		{
+			"fieldName": "entity_ref_id",
+			"fieldType": "uuid",
+			"description": "to which artefact (ID) does the question belong"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "question_project",
+			"referencedTable": "swpm_projects",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "project",
+					"fieldType": "uuid",
+					"description": "Project",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_questions",
+	"description": "Questions",
+	"ver": "21.8.2.1937",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

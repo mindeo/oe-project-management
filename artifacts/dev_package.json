@@ -1,0 +1,172 @@
+{
+	"id": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"createdAt": "2021-07-27T11:21:12.425Z",
+	"createdBy": "admin",
+	"git": {
+		"targetServers": [],
+		"path": "http://localhost:3010/mindeo/hellogit",
+		"remote": "https://github.com/mindeo/oe-project-management.git",
+		"testServers": []
+	},
+	"name": "jug-project-management",
+	"description": "SW Project Artifacts Management",
+	"ver": "21.10.14.842",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "eb3a67bf-e8cf-4e0f-b42b-bc42b29f230c",
+			"ver": "21.8.6.2034",
+			"application": "swpm",
+			"title": "SW Project Management",
+			"description": "SW Project Management"
+		}
+	],
+	"api": [
+		{
+			"id": "7be71916-54a7-4f79-a7e8-f8504c5261ec",
+			"name": "swpm",
+			"ver": "21.8.9.1459",
+			"description": null,
+			"apiGroup": "ddebf07f-7ddb-4070-bc51-b65b89266e5b"
+		}
+	],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [
+		{
+			"id": "4584c529-201a-4507-8318-207530363297",
+			"name": "swpm_ui",
+			"description": "UI",
+			"ver": "21.8.2.1937"
+		},
+		{
+			"id": "c57cf4e9-54d4-4882-8994-bc07a6aa4889",
+			"name": "swpm_api_data_model",
+			"description": "API - Data Model",
+			"ver": "21.8.2.1938"
+		},
+		{
+			"id": "59a1089e-cb17-4fd4-bf58-7f22cf38cc03",
+			"name": "swpm_ui_api",
+			"description": "UI - API",
+			"ver": "21.8.2.1938"
+		},
+		{
+			"id": "82761f47-f795-4263-92db-45dcc8049e57",
+			"name": "swpm_use_cases_ui",
+			"description": "Use Cases - UI",
+			"ver": "21.8.2.1939"
+		},
+		{
+			"id": "d5ce8b39-b842-45a5-bdf7-1cd813576e9a",
+			"name": "swpm_process_steps_use_cases",
+			"description": "Process Step - Use Cases",
+			"ver": "21.8.3.101"
+		},
+		{
+			"id": "03ad70ef-5d35-48b5-acc6-9b3b234fc4ff",
+			"name": "swpm_process_steps",
+			"description": "Process Steps",
+			"ver": "21.8.3.100"
+		},
+		{
+			"id": "530c2507-8fa6-4c21-b5fb-10b90a640a16",
+			"name": "swpm_process_steps_roles",
+			"description": "Process Step - Roles",
+			"ver": "21.8.3.101"
+		},
+		{
+			"id": "c88142f1-4a51-456a-90e5-92f8b7e2d189",
+			"name": "swpm_processes",
+			"description": "Processes",
+			"ver": "21.8.2.1735"
+		},
+		{
+			"id": "687fe177-9857-4455-849a-3633702ca390",
+			"name": "swpm_use_cases",
+			"description": "Use Cases",
+			"ver": "21.8.2.1745"
+		},
+		{
+			"id": "51e130f2-1fe5-49dc-b033-e1d67e3d96bf",
+			"name": "swpm_roles",
+			"description": "Roles",
+			"ver": "21.7.27.1629"
+		},
+		{
+			"id": "dc20f8fe-8cd6-48ce-8036-3d31fdcf0f02",
+			"name": "swpm_user_stories",
+			"description": "User Stories",
+			"ver": "21.7.27.1630"
+		},
+		{
+			"id": "a6f2d7f2-eb3d-4ff2-ae69-af7ecc11a858",
+			"name": "swpm_projects",
+			"description": "Projects",
+			"ver": "21.8.2.1720"
+		},
+		{
+			"id": "7532f812-9611-40e2-b68f-dc25497dea24",
+			"name": "swpm_api",
+			"description": "API",
+			"ver": "21.8.2.1936"
+		},
+		{
+			"id": "01d80bbd-2c12-42ab-a426-28fdaee620bf",
+			"name": "swpm_data_model",
+			"description": "Data Model",
+			"ver": "21.8.2.1936"
+		},
+		{
+			"id": "c0578357-d44a-443b-9e30-ba2713bf3b16",
+			"name": "swpm_questions",
+			"description": "Questions",
+			"ver": "21.8.2.1937"
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [
+		{
+			"id": "bedca57d-9368-4786-9e5b-579719b1daac",
+			"name": "swpm",
+			"description": "SW Project Management",
+			"ver": "21.7.27.1426"
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "7a13dd2e-0c8d-45bf-80fb-af5b3d82603d",
+			"description": null,
+			"name": "swpm"
+		}
+	],
+	"category": [
+		{
+			"id": "a4732310-87b6-4432-8224-fb43122e57ca",
+			"description": null,
+			"name": "SWPM"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "62f98b8f-7760-4738-b739-54f1caa2bf99",
+			"name": "SW Project Management",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": [],
+	"connector": []
+}

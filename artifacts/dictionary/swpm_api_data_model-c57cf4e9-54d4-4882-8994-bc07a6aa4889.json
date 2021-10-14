@@ -1,0 +1,53 @@
+{
+	"id": "c57cf4e9-54d4-4882-8994-bc07a6aa4889",
+	"createdAt": "2021-08-02T17:38:19.726Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "api",
+			"fieldType": "uuid",
+			"description": "API"
+		},
+		{
+			"fieldName": "data_model",
+			"fieldType": "uuid",
+			"description": "Data Model"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"name": "api",
+			"referencedTable": "swpm_api",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "api",
+					"fieldType": "uuid",
+					"description": "API",
+					"referencedColumnName": "id"
+				}
+			]
+		},
+		{
+			"name": "data_model",
+			"referencedTable": "swpm_data_model",
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "data_model",
+					"fieldType": "uuid",
+					"description": "Data Model",
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_api_data_model",
+	"description": "API - Data Model",
+	"ver": "21.8.2.1938",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,35 @@
+{
+	"id": "51e130f2-1fe5-49dc-b033-e1d67e3d96bf",
+	"createdAt": "2021-07-27T11:24:51.220Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "04ef1f13-17f3-46d2-b3fd-8b47c82c4755",
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Role name"
+		},
+		{
+			"id": "aaf8748e-8dda-467e-a4ec-ef0ca23cab0a",
+			"fieldName": "slug",
+			"fieldType": "text",
+			"description": "Role slug"
+		},
+		{
+			"id": "795c720b-f123-4579-806f-ede6cc8bab30",
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Description",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "swpm_roles",
+	"description": "Roles",
+	"ver": "21.7.27.1629",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

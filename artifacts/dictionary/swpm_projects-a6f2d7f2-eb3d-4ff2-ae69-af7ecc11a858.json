@@ -1,0 +1,29 @@
+{
+	"id": "a6f2d7f2-eb3d-4ff2-ae69-af7ecc11a858",
+	"createdAt": "2021-08-02T15:19:27.432Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "80e1015f-582a-41f1-eb08-2a3d4a8e0fa8",
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Project Name"
+		},
+		{
+			"id": "5bdad8d7-ee47-4333-931b-0d66722ca02f",
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Project Description",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "swpm_projects",
+	"description": "Projects",
+	"ver": "21.8.2.1720",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

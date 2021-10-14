@@ -1,0 +1,80 @@
+{
+	"id": "dc20f8fe-8cd6-48ce-8036-3d31fdcf0f02",
+	"createdAt": "2021-07-27T11:27:30.879Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "8e3d94f2-8050-49cc-c08b-25353ac939bd",
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Name"
+		},
+		{
+			"id": "14e9d3db-3a90-4933-9f60-478bc493647b",
+			"fieldName": "slug",
+			"fieldType": "text",
+			"description": "Slug"
+		},
+		{
+			"id": "3dadf768-ee85-4a44-f70f-915127b6daea",
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Description"
+		},
+		{
+			"id": "6ec71b07-1b00-4680-9973-8cc463273af2",
+			"fieldName": "role",
+			"fieldType": "uuid",
+			"description": "Role",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"id": "f3c1b204-ec60-41a4-f88a-3e6406ec052d",
+			"name": "us_role",
+			"referencedTable": "swpm_roles",
+			"referencedTableId": "51e130f2-1fe5-49dc-b033-e1d67e3d96bf",
+			"referencedTableColumns": [
+				{
+					"id": "04ef1f13-17f3-46d2-b3fd-8b47c82c4755",
+					"fieldName": "name",
+					"fieldType": "text",
+					"description": "Role name"
+				},
+				{
+					"id": "aaf8748e-8dda-467e-a4ec-ef0ca23cab0a",
+					"fieldName": "slug",
+					"fieldType": "text",
+					"description": "Role slug"
+				},
+				{
+					"id": "795c720b-f123-4579-806f-ede6cc8bab30",
+					"fieldName": "description",
+					"fieldType": "text",
+					"description": "Description",
+					"isNullable": true
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"id": "6ec71b07-1b00-4680-9973-8cc463273af2",
+					"fieldName": "role",
+					"fieldType": "uuid",
+					"description": "Role",
+					"isNullable": true,
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "swpm_user_stories",
+	"description": "User Stories",
+	"ver": "21.7.27.1630",
+	"enableAudit": false,
+	"package": "4c3c714e-3d56-4f83-bf65-34dfe7f172fc",
+	"rolesRead": [],
+	"rolesWrite": []
+}
