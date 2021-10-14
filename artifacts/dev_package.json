@@ -7,11 +7,30 @@
 		"path": "http://localhost:3010/mindeo/hellogit",
 		"remote": "https://github.com/mindeo/oe-project-management.git",
 		"testServers": [],
-		"readme": "This is a test project for project management."
+		"readme": "This is a test project for project management.",
+		"testAPI": [
+			{
+				"id": "3d8b8a04-c536-42ea-ec78-b0871dd8a619",
+				"apiid": "7be71916-54a7-4f79-a7e8-f8504c5261ec",
+				"operid": "31d4cfcf-5f0f-4b01-9c30-8d420f22b933",
+				"enabled": true,
+				"_data": {
+					"parameters": {},
+					"headers": {},
+					"body": ""
+				},
+				"testName": "Some Test",
+				"statusCode": "",
+				"jestMaxRuntime": null,
+				"jestMatchName": "req.data",
+				"jestMatchOperation": "toBeTruthy",
+				"jestMatchValue": ""
+			}
+		]
 	},
 	"name": "jug-project-management",
 	"description": "SW Project Artifacts Management",
-	"ver": "21.10.14.849",
+	"ver": "21.10.14.1111",
 	"enableCICD": true,
 	"apps": [
 		{
